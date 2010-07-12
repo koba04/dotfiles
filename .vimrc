@@ -38,7 +38,7 @@ set hlsearch
 set incsearch
 set showmode
 
-p"コマンドラインの履歴の保存数
+"コマンドラインの履歴の保存数
 set history=256
 
 "タブを空白に置き換える
