@@ -14,6 +14,8 @@ compinit
 
 ## 色を使う
 setopt prompt_subst
+autoload -U colors
+colors
 
 ## 補完候補一覧でファイルの種別をマーク表示
 setopt list_types
@@ -41,4 +43,9 @@ setopt share_history
 zstyle ':completion:*:default' menu select=1
 
 
-export PATH=/Users/koba04/perl5/perlbrew/bin:/Users/koba04/perl5/perlbrew/perls/current/bin:${PATH}:/opt/local/bin
+PATH=/Users/koba04/perl5/perlbrew/bin:/Users/koba04/perl5/perlbrew/perls/current/bin:${PATH}:/usr/local/bin
+export PATH=${PATH}:/Users/koba04/eclipse/android-sdk-mac_x86/tools
+
+alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
+alias minicpan-outdated='cpan-outdated --mirror file:///Users/koba04/perl5/mirrors/minicpan | minicpanm'
+
