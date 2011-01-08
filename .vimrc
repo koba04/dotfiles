@@ -32,13 +32,17 @@ set ruler
 
 "常にステータス行を表示
 set laststatus=2
-set fileformats=unix,dos,mac
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
 " 全角スペース可視化
 highlight ZenkakuSpace cterm=underline ctermfg=lightred guibg=darkgray
 match ZenkakuSpace /　/
 
+" encoding
+set fileencoding=utf-8
+set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932
+set fileformats=unix,dos,mac
+set encoding=utf-8
 
 "-------------
 " 検索系
