@@ -7,8 +7,6 @@ syntax on
 set nocompatible
 " BackSpace
 set backspace=indent,eol,start
-" スワップファイルの作成場所
-set directory=~/vim/tmp,~/vim,~/tmp
 "コマンドラインの履歴の保存数
 set history=256
 " 保存せずに別バッファファイルを表示
@@ -44,19 +42,18 @@ set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932
 set fileformats=unix,dos,mac
 set encoding=utf-8
 
+" file type
+autocmd BufNewFile,BufRead *.psgi set filetype=perl
+
 "-------------
 " 検索系
 "-------------
-
 "検索に大文字を含んでいたら大小区別
 set ignorecase
+"検索時にインクリメンタルサーチを行う
 set smartcase
 "検索時にヒット部位の色を変更(<C-L>)解除
 set hlsearch
-"検索時にインクリメンタルサーチを行う
-set incsearch
-set showmode
-
 
 "------------------
 " 入力系
@@ -76,4 +73,3 @@ set showcmd
 map <LEFT> <ESC>:bp<CR>
 map <RIGHT> <ESC>:bn<CR>
 map <UP> <ESC>:ls<CR>
-
