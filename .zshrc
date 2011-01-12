@@ -8,6 +8,11 @@ HISTSIZE=100000
 ## 保存する履歴の数
 SAVEHIST=100000
 
+# prompt
+PROMPT="[%/]%% "
+PROMPT2="[%_]%% "
+SPROMPT="%r is correct? [n,y,a,e]: "
+
 ## 補完機能の強化
 autoload -U compinit
 compinit
@@ -43,9 +48,7 @@ setopt share_history
 zstyle ':completion:*:default' menu select=1
 
 
-PATH=/Users/koba04/perl5/perlbrew/bin:/Users/koba04/perl5/perlbrew/perls/current/bin:${PATH}:/usr/local/bin
-export PATH=${PATH}:/Users/koba04/eclipse/android-sdk-mac_x86/tools
-
+export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:$HOME/eclipse/android-sdk-mac_x86/tools:$PATH
 alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
 alias minicpan-outdated='cpan-outdated --mirror file:///Users/koba04/perl5/mirrors/minicpan | minicpanm'
 
