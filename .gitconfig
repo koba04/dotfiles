@@ -1,0 +1,28 @@
+[alias]
+  ci = commit -v
+  up = !sh -c 'git remote update && git config --get-regexp svn-remote > /dev/null && git svn fetch'
+  co = checkout
+  br = branch
+  st = status
+  di = diff
+  df = diff --no-prefix
+  rb = rebase
+  gerp = grep
+  wt = whatchanged --stat
+  svf = svn fetch
+  svr = svn rebase
+  svd = svn dcommit --rmdir
+  new = whatchanged HEAD@{1}..HEAD --reverse --stat
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = always
+[core]
+# excludesfile = ~/project/dotfiles/git/gitignore
+  editor = "vim \"+e ++enc=utf-8\"" # force encoding utf-8 in log message.
+  pager = "lv -c" 
+[user]
+    name = Toru, Kobayashi
+    email = koba0004@gmail.com

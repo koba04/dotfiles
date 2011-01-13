@@ -50,5 +50,5 @@ zstyle ':completion:*:default' menu select=1
 
 export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:$HOME/eclipse/android-sdk-mac_x86/tools:$PATH
 alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
-alias minicpan-outdated='cpan-outdated --mirror file:///Users/koba04/perl5/mirrors/minicpan | minicpanm'
+alias minicpan-outdated='cpan-outdated --mirror file://$HOME/perl5/mirrors/minicpan | minicpanm'
 
