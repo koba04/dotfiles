@@ -1,4 +1,7 @@
-source /etc/profile
+autoload -U compinit
+compinit
+
+export LANG=ja_JP.UTF-8
 
 
 ## 履歴の保存先
@@ -13,14 +16,14 @@ PROMPT="[%/]%% "
 PROMPT2="[%_]%% "
 SPROMPT="%r is correct? [n,y,a,e]: "
 
-## 補完機能の強化
-autoload -U compinit
-compinit
-
 ## 色を使う
 setopt prompt_subst
 autoload -U colors
 colors
+export LSCOLORS=gxfxxxxxcxxxxxxxxxxxxx
+zstyle ':completion:*' list-colors 'di=36' 'ln=35'
+zstyle ':completion:*:default' menu select=1
+alias ls='ls -G'
 
 ## 補完候補一覧でファイルの種別をマーク表示
 setopt list_types
@@ -47,6 +50,15 @@ setopt share_history
 ## 補完候補のカーソル選択を有効に
 zstyle ':completion:*:default' menu select=1
 
+# for screen
+case "${TERM}" in screen)
+    preexec() {
+        echo -ne "\ek#${1%% *}\e\\"
+    }
+    precmd() {
+        echo -ne "\ek$(basename $(pwd))\e\\"
+    }
+esac
 
 export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:$HOME/eclipse/android-sdk-mac_x86/tools:$PATH
 alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
