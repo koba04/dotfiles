@@ -3,7 +3,7 @@ compinit
 export LANG=ja_JP.UTF-8
 
 # prompt
-PROMPT=$'%{\e[31m%}%n%%%{\e[m%} '
+PROMPT=$'%{\e[31m%}%n@%m%%%{\e[m%} '
 RPROMPT=$'%{\e[32m%}[%/]%{\e[m%}'
 PROMPT2="[%_]%% "
 
