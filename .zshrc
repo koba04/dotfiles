@@ -45,9 +45,12 @@ zstyle ':completion:*:default' menu select=1
 alias ls='ls -G'
 
 # perl
-export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:$HOME/eclipse/android-sdk-mac_x86/tools:$PATH
+export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:$PATH
 alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
 alias minicpan-outdated='cpan-outdated --mirror file://$HOME/perl5/mirrors/minicpan | minicpanm'
+
+# android
+export PATH=$PATH:$HOME/eclipse/android-sdk-mac_x86/tools
 
 # screen
 case "${TERM}" in screen)
