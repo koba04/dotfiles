@@ -42,6 +42,7 @@ set fileformats=unix,dos,mac
 set encoding=utf-8
 
 " file type
+filetype plugin on
 autocmd BufNewFile,BufRead *.psgi set filetype=perl
 
 "-------------
