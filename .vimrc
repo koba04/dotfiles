@@ -44,6 +44,9 @@ set encoding=utf-8
 " file type
 filetype plugin on
 autocmd BufNewFile,BufRead *.psgi set filetype=perl
+" 補完
+"setlocal iskeyword+=:
+"autocmd FileType perl set isfname-=-
 
 "-------------
 " 検索系
