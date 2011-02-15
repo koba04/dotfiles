@@ -4,7 +4,7 @@ export LANG=ja_JP.UTF-8
 
 # prompt
 PROMPT=$'%{\e[31m%}%n@%m%%%{\e[m%} '
-RPROMPT=$'%{\e[32m%}[%/]%{\e[m%}'
+RPROMPT=$'%{\e[32m%}[%1(v|%1v|)%/]%{\e[m%}'
 PROMPT2="[%_]%% "
 
 # history
@@ -50,6 +50,16 @@ alias ls='ls -G'
 export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:$PATH
 alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
 alias minicpan-outdated='cpan-outdated --mirror file://$HOME/perl5/mirrors/minicpan | minicpanm'
+
+# git
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' formats '%b '
+zstyle ':vcs_info:*' actionformats '%b|%a '
+precmd () {
+    psvar=()
+    LANG=en_US.UTF-8 vcs_info
+    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+}
 
 # android
 export PATH=$PATH:$HOME/eclipse/android-sdk-mac_x86/tools

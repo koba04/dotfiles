@@ -43,10 +43,11 @@ set encoding=utf-8
 
 " file type
 filetype plugin on
+filetype indent off
 autocmd BufNewFile,BufRead *.psgi set filetype=perl
 " 補完
 "setlocal iskeyword+=:
-"autocmd FileType perl set isfname-=-
+autocmd FileType perl set isfname-=-
 
 "-------------
 " 検索系
@@ -66,7 +67,8 @@ set hlsearch
 set expandtab
 set tabstop=4
 " indent
-set shiftwidth=4
+set noautoindent
+"set shiftwidth=4
 
 " コマンドライン補完
 set wildmenu
