@@ -35,6 +35,10 @@ set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V
 highlight ZenkakuSpace cterm=underline ctermfg=lightred guibg=darkgray
 match ZenkakuSpace /　/
 
+" 行末のスペース
+set list
+set listchars=tab:\ \ ,eol:\ ,trail:_
+
 " encoding
 set fileencoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932
