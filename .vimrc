@@ -12,6 +12,8 @@ set history=256
 " 保存せずに別バッファファイルを表示
 set hidden
 
+set visualbell
+
 "-------------
 " 表示系
 "-------------
@@ -72,7 +74,7 @@ set expandtab
 set tabstop=4
 " indent
 set noautoindent
-"set shiftwidth=4
+set shiftwidth=4
 
 " コマンドライン補完
 set wildmenu
@@ -82,3 +84,8 @@ set showcmd
 map <LEFT> <ESC>:bp<CR>
 map <RIGHT> <ESC>:bn<CR>
 map <UP> <ESC>:ls<CR>
+map <C-LEFT> <ESC>:tabprevious<CR>
+map <C-RIGHT> <ESC>:tabnext<CR>
+" きいてない
+"map <C-UP> <ESC>:tabs<CR>
+"map <C-q> <ESC>:tabonly<CR>
