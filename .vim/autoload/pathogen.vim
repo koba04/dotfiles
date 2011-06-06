@@ -1,0 +1,1 @@
+/Users/koba04/git/github/koba04/dotfiles/.vim/bundle/vim-pathogen/autoload/pathogen.vim

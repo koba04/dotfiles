@@ -51,6 +51,7 @@ set encoding=utf-8
 filetype plugin on
 filetype indent off
 autocmd BufNewFile,BufRead *.psgi set filetype=perl
+autocmd BufNewFile,BufRead *.tx   set filetype=html
 " 補完
 "setlocal iskeyword+=:
 autocmd FileType perl set isfname-=-
@@ -89,3 +90,6 @@ map <C-RIGHT> <ESC>:tabnext<CR>
 " きいてない
 "map <C-UP> <ESC>:tabs<CR>
 "map <C-q> <ESC>:tabonly<CR>
+
+" plugin
+call pathogen#runtime_append_all_bundles()

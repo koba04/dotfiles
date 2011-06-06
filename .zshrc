@@ -48,6 +48,7 @@ alias ls='ls -G'
 
 # perl
 export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:$PATH
+#export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:/usr/local/sbin:$PATH
 alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
 alias minicpan-outdated='cpan-outdated --mirror file://$HOME/perl5/mirrors/minicpan | minicpanm'
 
@@ -73,5 +74,18 @@ case "${TERM}" in screen)
         echo -ne "\ek$(basename $(pwd))\e\\"
     }
 esac
+
+# node.js
+if [[ -f ~/.nvm/nvm.sh ]]; then
+  source ~/.nvm/nvm.sh
+
+  if which nvm >/dev/null 2>&1 ;then
+    _nodejs_use_version="v0.4.6"
+#    if nvm ls | grep -F -e "${_nodejs_use_version}" >/dev/null 2>&1 ;then
+      nvm use "${_nodejs_use_version}" >/dev/null
+#    fi
+    unset _nodejs_use_version
+  fi
+fi
 
 
