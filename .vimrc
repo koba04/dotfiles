@@ -52,6 +52,10 @@ filetype plugin on
 filetype indent off
 autocmd BufNewFile,BufRead *.psgi set filetype=perl
 autocmd BufNewFile,BufRead *.tx   set filetype=html
+autocmd BufNewFile,BufRead *.js   set tabstop=2
+autocmd BufNewFile,BufRead *.html set tabstop=2
+autocmd BufNewFile,BufRead *.css  set tabstop=2
+
 " 補完
 "setlocal iskeyword+=:
 autocmd FileType perl set isfname-=-
