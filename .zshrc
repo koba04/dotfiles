@@ -88,4 +88,5 @@ if [[ -f ~/.nvm/nvm.sh ]]; then
   fi
 fi
 
-
+# Titanium
+alias ititanium='/Library/Application\ Support/Titanium/mobilesdk/osx/1.6.2/iphone/builder.py run'
