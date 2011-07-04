@@ -51,6 +51,7 @@ export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr
 #export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:/usr/local/sbin:$PATH
 alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
 alias minicpan-outdated='cpan-outdated --mirror file://$HOME/perl5/mirrors/minicpan | minicpanm'
+alias pup="plackup -MPlack::App::File -e 'Plack::App::File->new(root => \".\");'"
 
 # git
 autoload -Uz vcs_info
