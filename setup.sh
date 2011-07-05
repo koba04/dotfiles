@@ -7,3 +7,8 @@ do
         ln -Fis "$PWD/$dotfile" $HOME
     fi
 done
+
+git submodule init && git submodule update
+
+# pathogen
+ln -s $HOME/.vim/bundle/vim-pathogen/autoload/pathogen.vim $HOME/.vim/autoload/pathogen.vim

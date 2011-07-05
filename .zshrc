@@ -91,3 +91,7 @@ fi
 
 # Titanium
 alias ititanium='/Library/Application\ Support/Titanium/mobilesdk/osx/1.6.2/iphone/builder.py run'
+
+if [ -e $HOME/mf.zshrc ] ; then
+    source $HOME/mf.zshrc
+fi
