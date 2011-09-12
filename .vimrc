@@ -53,6 +53,7 @@ filetype indent off
 autocmd BufNewFile,BufRead *.psgi set filetype=perl
 autocmd BufNewFile,BufRead *.tx   set filetype=html
 autocmd BufNewFile,BufRead *.html set tabstop=2
+autocmd BufNewFile,BufRead *.html set shiftwidth=2
 
 " 補完
 "setlocal iskeyword+=:
