@@ -47,14 +47,6 @@ set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932
 set fileformats=unix,dos,mac
 set encoding=utf-8
 
-" file type
-filetype plugin on
-filetype indent off
-autocmd BufNewFile,BufRead *.psgi set filetype=perl
-autocmd BufNewFile,BufRead *.tx   set filetype=html
-autocmd BufNewFile,BufRead *.html set tabstop=2
-autocmd BufNewFile,BufRead *.html set shiftwidth=2
-
 " 補完
 "setlocal iskeyword+=:
 autocmd FileType perl set isfname-=-
@@ -93,6 +85,22 @@ map <C-RIGHT> <ESC>:tabnext<CR>
 " きいてない
 "map <C-UP> <ESC>:tabs<CR>
 "map <C-q> <ESC>:tabonly<CR>
+"
+" file type
+filetype plugin on
+filetype indent off
+autocmd BufNewFile,BufRead *.psgi set filetype=perl
+autocmd BufNewFile,BufRead *.tx   set filetype=html
+autocmd BufNewFile,BufRead *.html set tabstop=2
+autocmd BufNewFile,BufRead *.html set shiftwidth=2
+
+" netrwは常にtree view
+let g:netrw_liststyle = 3
+" 'v'でファイルを開くときは右側に開く。(デフォルトが左側なので入れ替え)
+let g:netrw_altv = 1
+" 'o'でファイルを開くときは下側に開く。(デフォルトが上側なので入れ替え)
+let g:netrw_alto = 1
+
 
 " plugin
 call pathogen#runtime_append_all_bundles()
