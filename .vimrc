@@ -47,9 +47,19 @@ set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932
 set fileformats=unix,dos,mac
 set encoding=utf-8
 
+" file type
+filetype plugin on
+filetype indent off
+au BufNewFile,BufRead *.psgi set filetype=perl
+au BufNewFile,BufRead *.tx   set filetype=html
+au BufNewFile,BufRead *.html set tabstop=2
+au BufNewFile,BufRead *.html set shiftwidth=2
+au BufNewFile,BufRead *.as   set noexpandtab
+au BufNewFile,BufRead *.as   set filetype=actionscript
+
 " 補完
 "setlocal iskeyword+=:
-autocmd FileType perl set isfname-=-
+au FileType perl set isfname-=-
 
 "-------------
 " 検索系
@@ -77,11 +87,13 @@ set wildmenu
 set showcmd
 
 " 矢印
-map <LEFT> <ESC>:bp<CR>
-map <RIGHT> <ESC>:bn<CR>
-map <UP> <ESC>:ls<CR>
-map <C-LEFT> <ESC>:tabprevious<CR>
-map <C-RIGHT> <ESC>:tabnext<CR>
+map <UP> <ESC>:bp<CR>
+map <DOWN> <ESC>:bn<CR>
+"map <UP> <ESC>:ls<CR>
+map <LEFT> <ESC>:tabprevious<CR>
+map <RIGHT> <ESC>:tabnext<CR>
+"map <C-LEFT> <ESC>:tabprevious<CR>
+"map <C-RIGHT> <ESC>:tabnext<CR>
 " きいてない
 "map <C-UP> <ESC>:tabs<CR>
 "map <C-q> <ESC>:tabonly<CR>
