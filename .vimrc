@@ -4,6 +4,7 @@ set backspace=indent,eol,start
 set history=256
 " 保存せずに別バッファファイルを表示
 set hidden
+set visualbell
 
 "-------------
 " 表示系
@@ -81,32 +82,12 @@ let g:netrw_liststyle = 3
 let g:netrw_altv = 1
 let g:netrw_alto = 1
 
-" plugin
-call pathogen#runtime_append_all_bundles()
-let g:neocomplcache_enable_at_startup = 1
-
-" vim-ref
-nnoremap <silent> ,pd :Ref perldoc
-
-""" unite.vim
-nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
-nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
-nnoremap <silent> ,ur :<C-u>Unite -buffer-name=register register<CR>
-nnoremap <silent> ,um :<C-u>Unite file_mru<CR>
-nnoremap <silent> ,uu :<C-u>Unite buffer file_mru<CR>
-nnoremap <silent> ,ua :<C-u>Unite buffer file_rec<CR>
-nnoremap <silent> ,ua :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
-" ウィンドウを分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-j> unite#do_action('split')
-au FileType unite inoremap <silent> <buffer> <expr> <C-j> unite#do_action('split')
-" ウィンドウを縦に分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
-au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
-" ESCキーを2回押すと終了する
-au FileType unite nnoremap <silent> <buffer> <ESC><ESC> q
-au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>q
 
 " 環境依存
 if filereadable(expand('~/.vimrc.local'))
     source ~/.vimrc.local
+endif
+" plugin
+if filereadable(expand('~/.vimrc.plugin'))
+    source ~/.vimrc.plugin
 endif
