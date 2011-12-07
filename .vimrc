@@ -66,7 +66,7 @@ nnoremap <C-n> <ESC>:tabnext<CR>
 nnoremap <C-p> <ESC>:tabprevious<CR>
 nnoremap <C-i> <ESC>:tabnew<CR>
 nnoremap <C-a> <ESC>:tabs<CR>
-nnoremap <C-w> <ESC>:tabonly<CR>
+nnoremap <C-q> <ESC>:tabonly<CR>
 
 " file type
 filetype plugin on
