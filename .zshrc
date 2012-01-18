@@ -1,6 +1,7 @@
 autoload -U compinit
 compinit
 export LANG=ja_JP.UTF-8
+export WORDCHARS='*?_-.[]~&;!#$%^(){}<>'
 
 # prompt
 PROMPT=$'%{\e[31m%}%n@%m%%%{\e[m%} '
