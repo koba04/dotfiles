@@ -90,8 +90,9 @@ if [[ -f ~/.nvm/nvm.sh ]]; then
   fi
 fi
 
-# Titanium
-alias ititanium='/Library/Application\ Support/Titanium/mobilesdk/osx/1.6.2/iphone/builder.py run'
+# Titanium(1.8.2)
+alias ititanium='/Library/Application\ Support/Titanium/mobilesdk/osx/1.8.2/iphone/builder.py simulator 4.3 '
+# how to use ititanium /path/to/TiProject com.package.name ProjectName universal iphone
 
 if [ -e $HOME/mf.zshrc ] ; then
     source $HOME/mf.zshrc
