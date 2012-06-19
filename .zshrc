@@ -34,7 +34,7 @@ setopt list_types
 setopt auto_list
 setopt auto_menu
 setopt magic_equal_subst
-zstyle ':completion:*:default' menu select=1
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # color
 setopt prompt_subst
