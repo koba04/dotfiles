@@ -48,6 +48,7 @@ alias ls='ls -G'
 #alias ls='ls --color=auto' 
 
 # perl
+source $HOME/perl5/perlbrew/etc/bashrc
 export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:$PATH
 #export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:/usr/local/sbin:$PATH
 alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
