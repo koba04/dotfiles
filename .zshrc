@@ -55,6 +55,9 @@ alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
 alias minicpan-outdated='cpan-outdated --mirror file://$HOME/perl5/mirrors/minicpan | minicpanm'
 alias pup="plackup -MPlack::App::File -e 'Plack::App::File->new(root => \".\");'"
 
+# ruby
+source $HOME/.rvm/scripts/rvm
+
 # git
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '%b '
@@ -98,3 +101,5 @@ alias ititanium='/Library/Application\ Support/Titanium/mobilesdk/osx/1.8.2/ipho
 if [ -e $HOME/mf.zshrc ] ; then
     source $HOME/mf.zshrc
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
