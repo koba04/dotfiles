@@ -23,3 +23,5 @@
 [user]
     name = Toru, Kobayashi
     email = koba0004@gmail.com
+[rebase]
+	stat = true
