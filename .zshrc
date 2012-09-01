@@ -82,17 +82,8 @@ case "${TERM}" in screen)
 esac
 
 # node.js
-if [[ -f ~/.nvm/nvm.sh ]]; then
-  source ~/.nvm/nvm.sh
-
-  if which nvm >/dev/null 2>&1 ;then
-    _nodejs_use_version="v0.4.6"
-#    if nvm ls | grep -F -e "${_nodejs_use_version}" >/dev/null 2>&1 ;then
-      nvm use "${_nodejs_use_version}" >/dev/null
-#    fi
-    unset _nodejs_use_version
-  fi
-fi
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+export NODE_PATH=$HOME/.nodebrew/current/lib/node_modules
 
 # Titanium(1.8.2)
 alias ititanium='/Library/Application\ Support/Titanium/mobilesdk/osx/1.8.2/iphone/builder.py simulator 4.3 '
