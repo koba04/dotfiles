@@ -10,7 +10,6 @@
   gerp = grep
   wt = whatchanged --stat
   new = whatchanged HEAD@{1}..HEAD --reverse --stat
-
 [color]
   diff = auto
   status = auto
@@ -21,5 +20,7 @@
   editor = "vim -u NONE -i NONE -N -c 'syntax on' \"+e ++enc=utf-8\"" # force encoding utf-8 in log message.
   pager = "lv -c"
 [user]
-    name = Toru, Kobayashi
-    email = koba0004@gmail.com
+  name = Toru, Kobayashi
+  email = koba0004@gmail.com
+[rebase]
+  stat = true
