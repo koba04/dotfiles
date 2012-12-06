@@ -2,3 +2,4 @@
 *.sassc
 *.scssc
 *.swp
+.DS_Store
