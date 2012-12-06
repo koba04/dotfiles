@@ -1,13 +1,11 @@
 [alias]
   ci = commit -v
-  up = !sh -c 'git remote update && git config --get-regexp svn-remote > /dev/null && git svn fetch'
   co = checkout
   br = branch
   st = status
   di = diff
   df = diff --no-prefix
   rb = rebase
-  gerp = grep
   wt = whatchanged --stat
   new = whatchanged HEAD@{1}..HEAD --reverse --stat
 [color]
@@ -24,3 +22,8 @@
   email = koba0004@gmail.com
 [rebase]
   stat = true
+[rerere]
+  enabled = true
+[merge]
+  ff = false
+
