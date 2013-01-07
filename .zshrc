@@ -48,15 +48,20 @@ alias ls='ls -G'
 #alias ls='ls --color=auto' 
 
 # perl
-source $HOME/perl5/perlbrew/etc/bashrc
+if [ -e $HOME/perl5/perlbrew/etc/bashrc ] ; then
+    source $HOME/perl5/perlbrew/etc/bashrc
+fi
 export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:$PATH
-#export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:/usr/local/sbin:$PATH
+
 alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
 alias minicpan-outdated='cpan-outdated --mirror file://$HOME/perl5/mirrors/minicpan | minicpanm'
 alias pup="plackup -MPlack::App::File -e 'Plack::App::File->new(root => \".\");'"
 
 # ruby
-source $HOME/.rvm/scripts/rvm
+if [ -e $HOME/.rvm/scripts/rvm ] ; then
+    source $HOME/.rvm/scripts/rvm
+fi
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # git
 autoload -Uz vcs_info
@@ -85,12 +90,6 @@ esac
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export NODE_PATH=$HOME/.nodebrew/current/lib/node_modules
 
-# Titanium(1.8.2)
-alias ititanium='/Library/Application\ Support/Titanium/mobilesdk/osx/1.8.2/iphone/builder.py simulator 4.3 '
-# how to use ititanium /path/to/TiProject com.package.name ProjectName universal iphone
-
-if [ -e $HOME/mf.zshrc ] ; then
-    source $HOME/mf.zshrc
+if [ -e $HOME/.zshrc.local ] ; then
+    source $HOME/.zshrc.local
 fi
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
