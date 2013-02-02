@@ -1,0 +1,13 @@
+{
+  "strict": true,
+  "undef": true,
+  "browser": true,
+  "jquery": true,
+  "node": true,
+  "devel": true,
+  "debug": true,
+  "globals": {
+    "_": false,
+    "Backbone": false,
+  }
+}
