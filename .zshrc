@@ -58,10 +58,7 @@ alias minicpan-outdated='cpan-outdated --mirror file://$HOME/perl5/mirrors/minic
 alias pup="plackup -MPlack::App::File -e 'Plack::App::File->new(root => \".\");'"
 
 # ruby
-if [ -e $HOME/.rvm/scripts/rvm ] ; then
-    source $HOME/.rvm/scripts/rvm
-fi
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 # git
 autoload -Uz vcs_info
