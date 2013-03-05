@@ -76,6 +76,7 @@ au BufNewFile,BufRead *.psgi set filetype=perl
 au BufNewFile,BufRead *.tx   set filetype=html
 au BufNewFile,BufRead *.html set tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.js   set tabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.coffee set tabstop=2 shiftwidth=2 filetype=coffee
 au BufNewFile,BufRead *.as   set filetype=actionscript noexpandtab
 au FileType perl set isfname-=-
 

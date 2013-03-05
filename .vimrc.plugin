@@ -1,4 +1,18 @@
-call pathogen#runtime_append_all_bundles()
+" Bundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/unite'
+Bundle 'thinca/vim-ref'
+Bundle 'thinca/vim-quickrun'
+
+filetype plugin indent on
+
+" neocomplecache
 let g:neocomplcache_enable_at_startup = 1
 
 " vim-ref

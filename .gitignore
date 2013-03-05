@@ -3,3 +3,4 @@
 *.scssc
 *.swp
 .DS_Store
+.vim/bundle
