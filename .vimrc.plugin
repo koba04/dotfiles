@@ -10,7 +10,7 @@ Bundle 'thinca/vim-ref'
 Bundle 'thinca/vim-quickrun'
 Bundle 'kchmck/vim-coffee-script'
 
-filetype plugin indent on
+filetype on
 
 " neocomplecache
 let g:neocomplcache_enable_at_startup = 1
