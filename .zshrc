@@ -70,9 +70,6 @@ precmd () {
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
-# android
-export PATH=$PATH:$HOME/eclipse/android-sdk-mac_x86/tools
-
 # screen
 case "${TERM}" in screen)
     preexec() {
