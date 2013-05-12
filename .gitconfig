@@ -1,13 +1,11 @@
+[include]
+  path = .gitconfig.local
 [alias]
-  ci = commit -v
+  ci = commit
   co = checkout
   br = branch
   st = status
   di = diff
-  df = diff --no-prefix
-  rb = rebase
-  wt = whatchanged --stat
-  new = whatchanged HEAD@{1}..HEAD --reverse --stat
 [color]
   diff = auto
   status = auto
@@ -26,4 +24,5 @@
   enabled = true
 [merge]
   ff = false
-
+[push]
+  default = simple
