@@ -48,18 +48,7 @@ alias ls='ls -G'
 #alias ls='ls --color=auto' 
 
 # perl
-if [ -e $HOME/perl5/perlbrew/etc/bashrc ] ; then
-    source $HOME/perl5/perlbrew/etc/bashrc
-fi
-export PATH=$HOME/perl5/perlbrew/bin:$HOME/perl5/perlbrew/perls/current/bin:/usr/local/bin:$PATH
-
-alias minicpanm='cpanm --mirror ~/perl5/mirrors/minicpan --mirror-only'
-alias minicpan-outdated='cpan-outdated --mirror file://$HOME/perl5/mirrors/minicpan | minicpanm'
 alias pup="plackup -MPlack::App::File -e 'Plack::App::File->new(root => \".\");'"
-
-# ruby
-export PATH=$HOME/.rbenv/bin:$PATH
-if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 # git
 autoload -Uz vcs_info
@@ -81,10 +70,12 @@ case "${TERM}" in screen)
     }
 esac
 
-# node.js
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-export NODE_PATH=$HOME/.nodebrew/current/lib/node_modules
+# anyenv
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
 
 if [ -e $HOME/.zshrc.local ] ; then
     source $HOME/.zshrc.local
 fi
+
+
