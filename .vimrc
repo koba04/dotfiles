@@ -73,7 +73,9 @@ filetype plugin on
 filetype indent off
 au BufNewFile,BufRead *      set tabstop=4 shiftwidth=4
 au BufNewFile,BufRead *.psgi set filetype=perl
+au BufNewFile,BufRead *.rb   set tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.tx   set filetype=html
+au BufNewFile,BufRead *.hbs  set filetype=html
 au BufNewFile,BufRead *.html set tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.js   set tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.coffee set tabstop=2 shiftwidth=2 filetype=coffee
