@@ -36,6 +36,9 @@ setopt auto_menu
 setopt magic_equal_subst
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+# like rake install['hoge']
+setopt nonomatch
+
 # color
 setopt prompt_subst
 autoload -U colors
