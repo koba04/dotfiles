@@ -1,0 +1,24 @@
+---
+layout: post
+title: "test"
+date: 2014-02-24 23:52:55 +0900
+comments: true
+categories: test
+---
+
+# main title
+
+this is test
+
+[my blog](http://d.hatena.ne.jp/koba04/)
+
+## sub title
+
+```coffeescript
+class Hoge extend Foo
+  constructor: ->
+    super
+```
+
+that is..
+
