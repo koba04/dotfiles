@@ -78,8 +78,10 @@ au BufNewFile,BufRead *.tx   set filetype=html
 au BufNewFile,BufRead *.hbs  set filetype=html
 au BufNewFile,BufRead *.html set tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.js   set tabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.json set tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.coffee set tabstop=2 shiftwidth=2 filetype=coffee
 au BufNewFile,BufRead *.as   set filetype=actionscript noexpandtab
+au BufNewFile,BufRead *.md   set tabstop=2 shiftwidth=2
 au FileType perl set isfname-=-
 
 " netrwは常にtree view
