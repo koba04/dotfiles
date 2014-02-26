@@ -1,2 +1,5 @@
 this is dotfiles management repository
 % sh setup.sh
+
+% vi
+:BundleInstall
