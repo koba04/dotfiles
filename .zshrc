@@ -4,9 +4,8 @@ export LANG=ja_JP.UTF-8
 export WORDCHARS='*?_-.[]~&;!#$%^(){}<>'
 
 # prompt
-PROMPT=$'%{\e[31m%}%n@%m%%%{\e[m%} '
-RPROMPT=$'%{\e[32m%}[%1(v|%1v|)%/]%{\e[m%}'
-PROMPT2="[%_]%% "
+PROMPT='%F{red}➜%f  '
+RPROMPT=$'${vcs_info_msg_0_}%{\e[32m%}[%d]%{\e[m%}'
 
 # history
 HISTFILE=$HOME/.zsh-history
@@ -48,30 +47,16 @@ export LS_COLORS='di=36:ln=35:ex=32'
 zstyle ':completion:*' list-colors 'di=36' 'ln=35' 'ex=32'
 zstyle ':completion:*:default' menu select=1
 alias ls='ls -G'
-#alias ls='ls --color=auto' 
-
-# perl
-alias pup="plackup -MPlack::App::File -e 'Plack::App::File->new(root => \".\");'"
 
 # git
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' formats '%b '
-zstyle ':vcs_info:*' actionformats '%b|%a '
-precmd () {
-    psvar=()
-    LANG=en_US.UTF-8 vcs_info
-    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
-}
-
-# screen
-case "${TERM}" in screen)
-    preexec() {
-        echo -ne "\ek#${1%% *}\e\\"
-    }
-    precmd() {
-        echo -ne "\ek$(basename $(pwd))\e\\"
-    }
-esac
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}"
+zstyle ':vcs_info:*' formats "%F{green}%c%u(%b)%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () { vcs_info }
+setopt prompt_subst
 
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
