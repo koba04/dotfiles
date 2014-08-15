@@ -52,9 +52,9 @@ set hlsearch
 "タブを空白に置き換える
 set expandtab
 set tabstop=4
-" indent
-set noautoindent
 set shiftwidth=4
+set noautoindent
+
 " コマンドライン補完
 set wildmenu
 set showcmd
@@ -70,19 +70,11 @@ nnoremap <C-q> <ESC>:tabonly<CR>
 
 " file type
 filetype plugin on
-filetype indent off
-au BufNewFile,BufRead *      set tabstop=4 shiftwidth=4
 au BufNewFile,BufRead *.psgi set filetype=perl
-au BufNewFile,BufRead *.rb   set tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.tx   set filetype=html
 au BufNewFile,BufRead *.hbs  set filetype=html
-au BufNewFile,BufRead *.html set tabstop=2 shiftwidth=2
-au BufNewFile,BufRead *.css  set tabstop=2 shiftwidth=2
-au BufNewFile,BufRead *.js   set tabstop=2 shiftwidth=2
-au BufNewFile,BufRead *.json set tabstop=2 shiftwidth=2
-au BufNewFile,BufRead *.coffee set tabstop=2 shiftwidth=2 filetype=coffee
-au BufNewFile,BufRead *.as   set filetype=actionscript noexpandtab
-au BufNewFile,BufRead *.md   set tabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.json set filetype=javascript
+au BufNewFile,BufRead *.md   set filetype=markdown
 au FileType perl set isfname-=-
 
 " netrwは常にtree view
