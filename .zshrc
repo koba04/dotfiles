@@ -1,6 +1,7 @@
 autoload -U compinit
 compinit
 export LANG=ja_JP.UTF-8
+export LC_ALL=ja_JP.UTF-8
 export WORDCHARS='*?_-.[]~&;!#$%^(){}<>'
 
 # prompt
