@@ -75,6 +75,9 @@ au BufNewFile,BufRead *.tx   set filetype=html
 au BufNewFile,BufRead *.hbs  set filetype=html
 au BufNewFile,BufRead *.json set filetype=javascript
 au BufNewFile,BufRead *.md   set filetype=markdown
+
+au BufNewFile,BufRead *.vue  set filetype=javascript
+
 au FileType perl set isfname-=-
 
 " netrwは常にtree view
