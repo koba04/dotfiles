@@ -25,4 +25,4 @@
 [merge]
   ff = false
 [push]
-  default = current
+  default = simple
