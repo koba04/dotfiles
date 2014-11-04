@@ -14,7 +14,6 @@
 [core]
   excludesfile = ~/.gitignore
   editor = vim -c \"set fenc=utf-8\"
-  pager = "lv -c"
 [user]
   name = Toru, Kobayashi
   email = koba0004@gmail.com
