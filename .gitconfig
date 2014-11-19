@@ -15,7 +15,7 @@
   excludesfile = ~/.gitignore
   editor = vim -c \"set fenc=utf-8\"
 [user]
-  name = Toru, Kobayashi
+  name = Toru Kobayashi
   email = koba0004@gmail.com
 [rebase]
   stat = true
