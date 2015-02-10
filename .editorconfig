@@ -8,14 +8,9 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.js]
-indent_size = 2
-
-[*.html]
-indent_size = 2
-
-[*.css]
+[*.{js,json,html,css}]
 indent_size = 2
 
 [*.php]
 indent_style = tab
+
