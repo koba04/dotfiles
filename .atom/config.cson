@@ -9,7 +9,7 @@
     softWrapAtPreferredLineLength: true
     invisibles: {}
     preferredLineLength: 120
-    fontSize: 15
+    fontSize: 14
   core: {}
   react:
     jsxTagStartPattern: "(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))"
