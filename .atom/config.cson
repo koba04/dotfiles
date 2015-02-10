@@ -1,0 +1,26 @@
+"*":
+  "exception-reporting":
+    userId: "113b27dd-6a8b-f6c8-177c-8ecb6e7703e7"
+  welcome:
+    showOnStartup: false
+  "tree-view": {}
+  editor:
+    showInvisibles: true
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    invisibles: {}
+    preferredLineLength: 120
+    fontSize: 15
+  core: {}
+  react:
+    jsxTagStartPattern: "(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))"
+    jsxComplexAttributePattern: "(?x)\\{ [^}\"']* $|\\( [^)\"']* $"
+    decreaseIndentForNextLinePattern: "(?x) />\\s*(,|;)?\\s*$ | ^\\s*\\S+.*</[-_\\.A-Za-z0-9]+>$"
+  "autocomplete-plus": {}
+".js.jsx.source":
+  editor:
+    preferredLineLength: 120
+".coffee.jsx.source":
+  editor:
+    preferredLineLength: 120
