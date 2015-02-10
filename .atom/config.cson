@@ -1,6 +1,4 @@
 "*":
-  "exception-reporting":
-    userId: "113b27dd-6a8b-f6c8-177c-8ecb6e7703e7"
   welcome:
     showOnStartup: false
   "tree-view": {}
