@@ -10,15 +10,19 @@
     invisibles: {}
     preferredLineLength: 120
     fontSize: 14
-  core: {}
+  core:
+    disabledPackages: [
+      "whitespace"
+    ]
+    themes: [
+      "one-dark-ui"
+      "one-dark-syntax"
+    ]
   react:
     jsxTagStartPattern: "(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))"
     jsxComplexAttributePattern: "(?x)\\{ [^}\"']* $|\\( [^)\"']* $"
     decreaseIndentForNextLinePattern: "(?x) />\\s*(,|;)?\\s*$ | ^\\s*\\S+.*</[-_\\.A-Za-z0-9]+>$"
-  "autocomplete-plus": {}
-".js.jsx.source":
-  editor:
-    preferredLineLength: 120
-".coffee.jsx.source":
-  editor:
-    preferredLineLength: 120
+  "autocomplete-plus":
+    navigateCompletions: "ctrl-p,ctrl-n"
+    confirmCompletion: "enter"
+    includeCompletionsFromAllBuffers: true
