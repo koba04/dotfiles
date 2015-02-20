@@ -3,13 +3,13 @@
     showOnStartup: false
   "tree-view": {}
   editor:
+    fontSize: 14
     showInvisibles: true
     showIndentGuide: true
+    preferredLineLength: 200
     softWrap: true
     softWrapAtPreferredLineLength: true
     invisibles: {}
-    preferredLineLength: 120
-    fontSize: 14
   core:
     disabledPackages: [
       "whitespace"
@@ -24,5 +24,4 @@
     decreaseIndentForNextLinePattern: "(?x) />\\s*(,|;)?\\s*$ | ^\\s*\\S+.*</[-_\\.A-Za-z0-9]+>$"
   "autocomplete-plus":
     navigateCompletions: "ctrl-p,ctrl-n"
-    confirmCompletion: "enter"
     includeCompletionsFromAllBuffers: true
