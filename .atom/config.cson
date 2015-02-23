@@ -25,3 +25,4 @@
   "autocomplete-plus":
     navigateCompletions: "ctrl-p,ctrl-n"
     includeCompletionsFromAllBuffers: true
+    confirmCompletion: "enter"
