@@ -18,10 +18,7 @@
       "one-dark-ui"
       "one-dark-syntax"
     ]
-  react:
-    jsxTagStartPattern: "(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))"
-    jsxComplexAttributePattern: "(?x)\\{ [^}\"']* $|\\( [^)\"']* $"
-    decreaseIndentForNextLinePattern: "(?x) />\\s*(,|;)?\\s*$ | ^\\s*\\S+.*</[-_\\.A-Za-z0-9]+>$"
+  react: {}
   "autocomplete-plus":
     navigateCompletions: "ctrl-p,ctrl-n"
     includeCompletionsFromAllBuffers: true
