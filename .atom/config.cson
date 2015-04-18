@@ -11,9 +11,6 @@
     softWrapAtPreferredLineLength: true
     invisibles: {}
   core:
-    disabledPackages: [
-      "whitespace"
-    ]
     themes: [
       "one-dark-ui"
       "one-dark-syntax"
@@ -23,3 +20,5 @@
     navigateCompletions: "ctrl-p,ctrl-n"
     includeCompletionsFromAllBuffers: true
     confirmCompletion: "enter"
+  "japanese-wrap":
+    characterWidth: {}
