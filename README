@@ -3,3 +3,6 @@ this is dotfiles management repository
 
 % vi
 :BundleInstall
+
+Atom Editor
+% apm stars --install
