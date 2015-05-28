@@ -18,3 +18,16 @@ if [ ! -e $HOME/.anyenv ]
 then
     git clone https://github.com/riywo/anyenv ~/.anyenv
 fi
+
+cat <<EOL
+
+Setup hoven't finished completely yet.
+
+vim:
+  % vim
+  :BundleInstall
+
+AtomEditor:
+  % apm stars --install
+
+EOL
