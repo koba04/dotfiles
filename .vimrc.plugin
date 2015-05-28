@@ -6,15 +6,9 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'Shougo/neocomplcache'
-Bundle 'thinca/vim-ref'
-Bundle 'thinca/vim-quickrun'
-Bundle 'kchmck/vim-coffee-script'
 
 filetype on
 
 " neocomplecache
 let g:neocomplcache_enable_at_startup = 1
-
-" vim-ref
-nnoremap <silent> ,pd :Ref perldoc
 
