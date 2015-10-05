@@ -1,34 +1,27 @@
 "*":
   welcome:
     showOnStartup: false
-  "tree-view":
-    {}
+  "tree-view": {}
   editor:
-    fontSize: 14
     showInvisibles: true
     showIndentGuide: true
     preferredLineLength: 200
     softWrap: true
     softWrapAtPreferredLineLength: true
-    invisibles:
-      {}
+    invisibles: {}
   core:
     themes: [
       "one-dark-ui"
       "one-dark-syntax"
     ]
-  react:
-    {}
+  react: {}
   "autocomplete-plus":
     navigateCompletions: "ctrl-p,ctrl-n"
     includeCompletionsFromAllBuffers: true
     confirmCompletion: "enter"
   "japanese-wrap":
-    characterWidth:
-      {}
-  "linter-eslint":
-    {}
-  linter:
-    {}
+    characterWidth: {}
+  "linter-eslint": {}
+  linter: {}
   "git-projects":
     maxDepth: 2
