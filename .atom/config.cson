@@ -1,7 +1,6 @@
 "*":
   welcome:
     showOnStartup: false
-  "tree-view": {}
   editor:
     showInvisibles: true
     showIndentGuide: true
@@ -23,5 +22,9 @@
     characterWidth: {}
   "linter-eslint": {}
   linter: {}
-  "git-projects":
-    maxDepth: 2
+  "markdown-preview":
+    useGitHubStyle: true
+".php":
+  whitespace:
+    removeTrailingWhitespace: false
+    ensureSingleTrailingNewline: false
