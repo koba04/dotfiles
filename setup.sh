@@ -1,4 +1,5 @@
-#!/bin/sh -x
+#!/bin/sh -xe
+
 cd $(dirname $0)
 for dotfile in .?*
 do

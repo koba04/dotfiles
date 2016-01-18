@@ -5,3 +5,4 @@
 .DS_Store
 .vim/bundle
 .atom/.apm
+.atom/blob-store
