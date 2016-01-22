@@ -1,8 +1,17 @@
-this is dotfiles management repository
+# my dotfiles management repository
+
+```
 % sh setup.sh
+```
 
-% vi
-:BundleInstall
+## vim
 
-Atom Editor
+```
+% curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
+```
+
+## Atom Editor
+
+```
 % apm stars --install
+```
