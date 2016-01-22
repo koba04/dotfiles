@@ -3,6 +3,7 @@
 *.scssc
 *.swp
 .DS_Store
-.vim/bundle
+.vim/bundle/*
+!.vim/bundle/NeoBundle.lock
 .atom/.apm
 .atom/blob-store

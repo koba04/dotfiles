@@ -25,8 +25,7 @@ cat <<EOL
 Setup hoven't finished completely yet.
 
 vim:
-  % vim
-  :BundleInstall
+  % curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
 
 AtomEditor:
   % apm stars --install
