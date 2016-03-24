@@ -1,28 +1,28 @@
 "*":
-  welcome:
-    showOnStartup: false
-  editor:
-    showInvisibles: true
-    showIndentGuide: true
-    preferredLineLength: 200
-    softWrap: true
-    softWrapAtPreferredLineLength: true
-    invisibles: {}
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+    includeCompletionsFromAllBuffers: true
+    navigateCompletions: "ctrl-p,ctrl-n"
   core:
     themes: [
       "one-dark-ui"
       "one-dark-syntax"
     ]
-  react: {}
-  "autocomplete-plus":
-    navigateCompletions: "ctrl-p,ctrl-n"
-    includeCompletionsFromAllBuffers: true
-    confirmCompletion: "enter"
-  "linter-eslint": {}
+  editor:
+    invisibles: {}
+    preferredLineLength: 200
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
   linter: {}
+  "linter-eslint": {}
   "markdown-preview":
     useGitHubStyle: true
+  react: {}
+  welcome:
+    showOnStartup: false
 ".php":
   whitespace:
-    removeTrailingWhitespace: false
     ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: false
