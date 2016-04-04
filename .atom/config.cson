@@ -4,6 +4,8 @@
     includeCompletionsFromAllBuffers: true
     navigateCompletions: "ctrl-p,ctrl-n"
   core:
+    allowPendingPaneItems: false
+    closeEmptyWindows: false
     themes: [
       "one-dark-ui"
       "one-dark-syntax"
