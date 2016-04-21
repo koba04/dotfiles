@@ -12,3 +12,6 @@
 #   editor = editorView.getEditor()
 #   if path.extname(editor.getPath()) is '.md'
 #     editor.setSoftWrapped(true)
+
+# https://github.com/atom/tree-view/pull/804
+atom.workspace.onDidAddPaneItem ({pane}) -> pane.setPendingItem(null)
