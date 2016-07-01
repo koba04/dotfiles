@@ -1,0 +1,15 @@
+// create a symlink to "${HOME}/Library/Application Support/Code/User/keybindings.json"
+[
+{ "key": "shift+ctrl+n",            "command": "cursorDownSelect",
+                                      "when": "editorTextFocus" },
+{ "key": "shift+ctrl+p",            "command": "cursorUpSelect",
+                                      "when": "editorTextFocus" },
+{ "key": "shift+ctrl+f",            "command": "cursorRightSelect",
+                                      "when": "editorTextFocus" },
+{ "key": "shift+ctrl+b",            "command": "cursorLeftSelect",
+                                      "when": "editorTextFocus" },
+{ "key": "ctrl+n",                  "command": "selectNextSuggestion",
+                                      "when": "editorTextFocus && suggestWidgetVisible" },
+{ "key": "ctrl+p",                  "command": "selectPrevSuggestion",
+                                      "when": "editorTextFocus && suggestWidgetVisible" }
+]
