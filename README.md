@@ -16,6 +16,18 @@
 % sh setup-vscode.sh
 ```
 
+* Install extensions
+
+```
+cat .vscode/extensions.txt | xargs -n 1 code-insiders --install-extension
+```
+
+* Save extensions
+
+```
+code-insiders --list-extensions > .vscode/extensions.txt
+```
+
 ## Atom Editor
 
 ```

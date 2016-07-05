@@ -1,0 +1,5 @@
+EditorConfig.EditorConfig
+dbaeumer.vscode-eslint
+flowtype.flow-for-vscode
+robertohuertasm.vscode-icons
+vsmobile.vscode-react-native
