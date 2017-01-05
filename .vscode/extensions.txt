@@ -1,4 +1,5 @@
 EditorConfig.EditorConfig
 dbaeumer.vscode-eslint
 flowtype.flow-for-vscode
+taichi.vscode-textlint
 vsmobile.vscode-react-native
