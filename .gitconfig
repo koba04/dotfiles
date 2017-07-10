@@ -25,3 +25,6 @@
   ff = false
 [push]
   default = simple
+
+[ghq]
+  root = ~/repos

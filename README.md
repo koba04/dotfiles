@@ -4,6 +4,13 @@
 % sh setup.sh
 ```
 
+## ghq
+
+```
+% brew install
+% go get github.com/motemen/ghq
+```
+
 ## vim
 
 ```
@@ -19,13 +26,13 @@
 * Install extensions
 
 ```
-cat .vscode/extensions.txt | xargs -n 1 code-insiders --install-extension
+cat .vscode/extensions.txt | xargs -n 1 code --install-extension
 ```
 
 * Save extensions
 
 ```
-code-insiders --list-extensions > .vscode/extensions.txt
+code --list-extensions > .vscode/extensions.txt
 ```
 
 ## Atom Editor
