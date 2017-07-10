@@ -1,5 +1,5 @@
 // Place your settings in this file to overwrite the default settings
 {
 "editor.wordWrap": "off",
-"workbench.iconTheme": "vs-seti"
+"editor.minimap.enabled": false
 }
