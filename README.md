@@ -11,6 +11,8 @@
 % brew install peco
 ```
 
+You can use ghq + peco through `repo` command.
+
 ## vim
 
 ```
