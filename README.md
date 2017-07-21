@@ -4,11 +4,11 @@
 % sh setup.sh
 ```
 
-## ghq
+## ghq & peco
 
 ```
-% brew install
-% go get github.com/motemen/ghq
+% brew install ghq
+% brew install peco
 ```
 
 ## vim

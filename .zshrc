@@ -63,6 +63,9 @@ setopt prompt_subst
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
+# ghq + peco
+alias repo='cd $(ghq list -p | peco)'
+
 if [ -e $HOME/.zshrc.local ] ; then
     source $HOME/.zshrc.local
 fi
