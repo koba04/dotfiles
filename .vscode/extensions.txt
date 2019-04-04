@@ -1,5 +1,8 @@
 EditorConfig.EditorConfig
 dbaeumer.vscode-eslint
-eg2.tslint
+esbenp.prettier-vscode
+shinnn.stylelint
 flowtype.flow-for-vscode
-vsmobile.vscode-react-native
+jpoissonnier.vscode-styled-components
+taichi.vscode-textlint
+rust-lang.rust

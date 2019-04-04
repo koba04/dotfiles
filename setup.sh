@@ -9,12 +9,6 @@ do
     fi
 done
 
-# anyenv
-if [ ! -e $HOME/.anyenv ]
-then
-    git clone https://github.com/riywo/anyenv ~/.anyenv
-fi
-
 cat <<EOL
 
 Setup hoven't finished completely yet.
@@ -24,8 +18,5 @@ vim:
 
 VSCode:
   % sh setup-vscode.sh
-
-AtomEditor:
-  % apm stars --install
 
 EOL

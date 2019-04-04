@@ -54,6 +54,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set noautoindent
+autocmd InsertLeave * set nopaste
 
 " コマンドライン補完
 set wildmenu

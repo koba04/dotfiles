@@ -1,7 +1,18 @@
 # my dotfiles management repository
 
 ```
+% mkdir -p ~/repo/github.com/koba4
+% cd ~/repo/github.com/koba04
+% git clone git@github.com:koba04/dotfiles.git
 % sh setup.sh
+```
+
+## Node & (Ruby)
+
+```
+% brew install nodenv
+# if you need
+% brew install rbenv
 ```
 
 ## ghq & peco
@@ -35,10 +46,4 @@ cat .vscode/extensions.txt | xargs -n 1 code --install-extension
 
 ```
 code --list-extensions > .vscode/extensions.txt
-```
-
-## Atom Editor
-
-```
-% apm stars --install
 ```

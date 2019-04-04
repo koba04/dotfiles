@@ -59,12 +59,16 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 setopt prompt_subst
 
-# anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+# nodeenv
+eval "$(nodenv init -)"
+# rbenv
+eval "$(rbenv init -)"
 
 # ghq + peco
 alias repo='cd $(ghq list -p | peco)'
+
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
 
 if [ -e $HOME/.zshrc.local ] ; then
     source $HOME/.zshrc.local

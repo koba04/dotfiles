@@ -1,5 +1,5 @@
-// Place your settings in this file to overwrite the default settings
 {
-"editor.wordWrap": "off",
-"editor.minimap.enabled": false
+  // Place your settings in this file to overwrite the default settings
+  "editor.wordWrap": "off",
+  "editor.minimap.enabled": false
 }
