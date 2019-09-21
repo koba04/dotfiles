@@ -74,4 +74,7 @@ if [ -e $HOME/.zshrc.local ] ; then
     source $HOME/.zshrc.local
 fi
 
+# direnv
+export EDITOR=vim
+eval "$(direnv hook zsh)"
 
