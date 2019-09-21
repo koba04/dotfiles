@@ -8,3 +8,4 @@
 .vim/.netrwhist
 .atom/.apm
 .atom/blob-store
+.envrc
