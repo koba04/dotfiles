@@ -7,6 +7,6 @@ end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 
-[*.{js,json,html,css}]
+[*.{js,json,html,css,ts,tsx,jsx}]
 indent_size = 2
 
