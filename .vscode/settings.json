@@ -1,5 +1,24 @@
 {
   // Place your settings in this file to overwrite the default settings
   "editor.wordWrap": "off",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language":"vue",
+      "autoFix":true
+    },
+    {
+      "language":"html",
+      "autoFix":true
+    },
+    {
+      "language":"javascript",
+      "autoFix":true
+    },
+    {
+      "language":"typescript",
+      "autoFix":true
+    }
+  ]
 }
