@@ -66,6 +66,8 @@ eval "$(rbenv init -)"
 
 # ghq + peco
 alias repo='cd $(ghq list -p | peco)'
+# git + peco
+alias gco='git co $(git br | peco)'
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
