@@ -1,8 +1,9 @@
 # my dotfiles management repository
 
 ```
-% mkdir -p ~/repo/github.com/koba4
-% cd ~/repo/github.com/koba04
+% cd
+% mkdir -p repos/github.com/koba4
+% cd repos/github.com/koba04
 % git clone git@github.com:koba04/dotfiles.git
 % sh setup.sh
 ```
