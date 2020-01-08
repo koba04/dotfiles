@@ -9,3 +9,5 @@
 .atom/.apm
 .atom/blob-store
 .envrc
+.vscode/argv.json
+.vscode/extensions/
