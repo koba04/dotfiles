@@ -43,6 +43,8 @@ You can use ghq + peco through `repo` command.
 % sh setup-vscode.sh
 ```
 
+* Install `code` command from VSCode
+
 * Install extensions
 
 ```
