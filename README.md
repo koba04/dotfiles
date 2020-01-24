@@ -25,6 +25,12 @@
 
 You can use ghq + peco through `repo` command.
 
+## direnv
+
+```
+% brew install direnv
+```
+
 ## vim
 
 ```
