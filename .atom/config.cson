@@ -5,6 +5,7 @@
     navigateCompletions: "ctrl-p,ctrl-n"
   core:
     closeEmptyWindows: false
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "one-dark-syntax"
@@ -16,6 +17,8 @@
     showInvisibles: true
     softWrap: true
     softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "9c25aec1-f1eb-4d80-95c4-f52634cf6f7c"
   linter: {}
   "linter-eslint": {}
   "markdown-preview":
