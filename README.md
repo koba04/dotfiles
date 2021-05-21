@@ -56,3 +56,12 @@ cat .vscode/extensions.txt | xargs -n 1 code --install-extension
 ```
 code --list-extensions > .vscode/extensions.txt
 ```
+
+## Karabiner
+
+Install [Karabiner](https://karabiner-elements.pqrs.org/), and then run the setup shell.
+
+```
+% sh setup-karabiner.sh
+```
+
