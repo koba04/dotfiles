@@ -59,6 +59,9 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 setopt prompt_subst
 
+# homebrew
+export PATH="/opt/homebrew/bin:$PATH"
+
 # nodeenv
 eval "$(nodenv init -)"
 # rbenv

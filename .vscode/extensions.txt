@@ -1,6 +1,0 @@
-dbaeumer.vscode-eslint
-EditorConfig.EditorConfig
-flowtype.flow-for-vscode
-jpoissonnier.vscode-styled-components
-Prisma.vscode-graphql
-rust-lang.rust

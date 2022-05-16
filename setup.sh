@@ -16,7 +16,4 @@ Setup hoven't finished completely yet.
 vim:
   % curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
 
-VSCode:
-  % sh setup-vscode.sh
-
 EOL
