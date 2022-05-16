@@ -83,3 +83,13 @@ fi
 export EDITOR=vim
 eval "$(direnv hook zsh)"
 
+bindkey "^A"   beginning-of-line                    # ctrl-a
+bindkey "^B"   backward-char                        # ctrl-b
+bindkey "^E"   end-of-line                          # ctrl-e
+bindkey "^D"   delete-char                          # ctrl-d
+bindkey "^K"   kill-line                            # ctrl-k
+bindkey "^N"   down-line-or-search                  # ctrl-n
+bindkey "^P"   up-line-or-search                    # ctrl-p
+bindkey "^R"   history-incremental-search-backward  # ctrl-r
+bindkey "^[[B" history-search-forward               # down arrow
+bindkey "^[[A" history-search-backward              # up arrow
