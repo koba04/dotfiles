@@ -6,13 +6,7 @@ set history=256
 set hidden
 set visualbell
 
-"-------------
-" 表示系
-"-------------
 set nu
-hi Comment ctermfg=yellow cterm=none
-hi Constant ctermfg=green cterm=none
-colorscheme darkblue
 
 set showmatch
 set title
@@ -71,15 +65,7 @@ nnoremap <C-q> <ESC>:tabonly<CR>
 
 " file type
 filetype plugin on
-au BufNewFile,BufRead *.psgi set filetype=perl
-au BufNewFile,BufRead *.tx   set filetype=html
 au BufNewFile,BufRead *.hbs  set filetype=html
-au BufNewFile,BufRead *.json set filetype=javascript
-au BufNewFile,BufRead *.md   set filetype=markdown
-
-au BufNewFile,BufRead *.vue  set filetype=javascript
-
-au FileType perl set isfname-=-
 
 " netrwは常にtree view
 let g:netrw_liststyle = 3
