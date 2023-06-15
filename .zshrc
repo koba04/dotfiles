@@ -6,7 +6,7 @@ export WORDCHARS='*?_-.[]~&;!#$%^(){}<>'
 
 # prompt
 PROMPT='%F{red}➜%f  '
-RPROMPT=$'${vcs_info_msg_0_}%{\e[32m%}[%d]%{\e[m%}'
+RPROMPT=$'${vcs_info_msg_0_}%{\e[32m%}[%~]%{\e[m%}'
 
 # history
 HISTFILE=$HOME/.zsh-history
