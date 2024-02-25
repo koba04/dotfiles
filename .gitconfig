@@ -23,10 +23,16 @@
   enabled = true
 [merge]
   ff = false
+  conflictStyle = zdiff3
 [push]
   default = simple
-
+[branch]
+  sort = committerdate
 [ghq]
   root = ~/repos
 [pull]
-  rebase = true
+  ff = only
+[commit]
+  verbose = true
+[diff]
+  algorithm = histogram
